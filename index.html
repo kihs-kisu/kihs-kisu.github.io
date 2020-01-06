@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>雄工學聯傳送門</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:500,700&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="icon" sizes="192x192" href="img/icon.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="theme-color" content="#FFFFFF">
+</head>
+
+<body>
+    <div class=page>
+        <div class=header>
+            <img id=pic src="https://avatars0.githubusercontent.com/u/59478259" alt="高雄高工學生聯合自治會"></img>
+            <h1>高雄高工學生聯合自治會</h1>
+            <h2>Kaohsiung Industrial High School Students Union</h2>
+        </div>
+        <div class=list>
+            <a href="https://forms.gle/Y6Df9KrU3dfmYhhz7">
+                <div class=list_item id=l1 style="background-image: url(img/l1_cover.png);">雄工學聯周邊「#REUNION」大學 T 預購！
+                </div>
+            </a>
+            <a href="https://youtu.be/QyFqoNJpr683">
+                <div class=list_item id=l2 style="background-image: url(img/l2_cover.png);">迷．音耶誕晚會精華！</div>
+            </a>
+        </div>
+    </div>
+    <div class=social>
+        <a href="https://www.instagram.com/kihs_kisu/">
+            <div class=social_item>
+                <img src="img/ig_icon.svg" id="ig_icon" alt="Instagram Logo" />@kihs_kisu
+            </div>
+        </a>
+    </div>
+
+    <script>
+        var item = document.getElementsByClassName('list')[0];
+
+        window.addEventListener('wheel', function (e) {
+
+            if (e.deltaY > 0) item.scrollLeft += 100;
+            else item.scrollLeft -= 100;
+        });
+    </script>
+
+</body>
+
+</html>

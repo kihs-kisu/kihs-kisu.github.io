@@ -1,0 +1,172 @@
+/*General*/
+html,
+body {
+    background: #151618;
+    width: 100%;
+    margin: 0;
+    font-family: "Google Sans", "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.page {
+    width: 100%
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*Header*/
+.header {
+    height: 100%;
+    position: relative;
+    margin-top: 2em;
+}
+
+#pic {
+    width: 8em;
+    border-radius: 100%;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 1.75em;
+    margin-bottom: -.25em;
+}
+
+h2 {
+    color: #FFF;
+    opacity: .5;
+    font-size: .75em;
+    margin-bottom: 2em;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+
+/*List*/
+.list {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.list_item {
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 1em;
+    padding: 6.4em .35em 1.2em;
+    margin-bottom: .75em;
+    height: 100%;
+    
+    box-shadow: 0 0 4px #FFFFFF59;
+    transition: box-shadow .28s cubic-bezier(0.4,0.0,0.2,1);
+
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}
+
+.list_item:focus, .list_item:active {
+    outline: 0;
+    box-shadow: 0 0 8px #00000059;
+}
+
+
+/*Footer*/
+.social {
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 400;
+    width: 5em;
+    right: 0;
+    left: 0;
+    height: 3em;
+    position: relative;
+    margin: 3em auto 0 auto;
+}
+
+#ig_icon {
+    width: 1em;
+    height: 1em;
+}
+
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #424242;
+    border-radius: 2em;
+}
+
+
+
+
+/*iPhone 5/SE support*/
+@media only screen 
+and (max-device-width : 320px) 
+and (orientation : portrait) {
+    html, body {margin-bottom: .5em; }
+    a {font-size: .8em;}
+    h1 {font-size: 1.5em;}
+    h2 {font-size: .5em;}
+    .list_item {
+        font-size: 1.1em;
+        border-radius: 12px;
+        padding: 5.8em .35em 1.2em;
+        margin-bottom: .75em;
+        height: 1em;
+        
+        box-shadow: 0 0 4px #FFFFFF59;
+        transition: box-shadow .28s cubic-bezier(0.4,0.0,0.2,1);
+    }
+    .social {
+        width: 4em;
+        height: 2em;
+        position: relative;
+        margin: 1em auto 0 auto;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .list {
+        display: inline-flex;
+        overflow-x: auto;
+    }
+    .list_item {
+        font-size: 1.5em;
+        padding: 8em .35em 0em;
+        margin: 0 .75em;
+        width: 40vw;
+        height: 10vh;
+    }
+    .social {
+        width: 6em;
+        height: 1em;
+        position: absolute;
+        bottom: 5em;
+    }
+}
