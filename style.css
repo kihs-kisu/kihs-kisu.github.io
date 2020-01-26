@@ -59,6 +59,9 @@ h2, h3 {
     white-space: nowrap;
 }
 
+h3 {
+    font-weight: 500;
+}
 
 /*List*/
 .list {
@@ -68,6 +71,7 @@ h2, h3 {
 
 .list_item {
     font-size: 1.1em;
+    font-weight: 700;
     border-radius: 1em;
     padding: 6.4em .35em 1.2em;
     margin-bottom: .75em;
